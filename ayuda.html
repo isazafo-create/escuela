@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ayuda - Calculadora</title>
+  <link href="st.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>Guía de Uso de la Calculadora</h1>
+    <p>¡Bienvenido! Aquí te explicamos cómo utilizar esta calculadora paso a paso.</p>
+
+    <h2>¿Cómo Realizar un Cálculo?</h2>
+    <p>Nuestra calculadora funciona de una manera directa. Sigue estos pasos:</p>
+    <ol>
+      <li>
+        <strong>Introduce el primer número:</strong> Escribe el primer valor de tu operación en el campo llamado <strong>"Número 1"</strong>.
+      </li>
+      <li>
+        <strong>Introduce el segundo número:</strong> Ahora, escribe el segundo valor en el campo <strong>"Número 2"</strong>.
+      </li>
+      <li>
+        <strong>Elige la operación:</strong> Haz clic en uno de los cuatro botones que se encuentran debajo de los campos de número:
+        <ul>
+          <li><code>+</code> para sumar</li>
+          <li><code>-</code> para restar</li>
+          <li><code>*</code> para multiplicar</li>
+          <li><code>/</code> para dividir</li>
+        </ul>
+      </li>
+      <li>
+        <strong>¡Listo!</strong> El resultado de la operación aparecerá automáticamente en la sección <strong>"Resultado"</strong>.
+      </li>
+    </ol>
+
+    <h2>Historial de Resultados</h2>
+    <p>La calculadora guarda un registro de los resultados que has obtenido:</p>
+    <ul>
+      <li>Para ver tus resultados anteriores, haz clic en el botón <strong>"Mostrar Historial"</strong>. Se desplegará una lista con los números.</li>
+      <li>Para ocultar la lista, simplemente vuelve a hacer clic en el botón, que ahora dirá <strong>"Ocultar Historial"</strong>.</li>
+    </ul>
+
+    <hr>
+
+    <h2>Funcionamiento Interno</h2>
+    <p>Para los más curiosos, la calculadora funciona así:</p>
+    <ul>
+      <li><strong><code>index.html</code>:</strong> Este archivo define la estructura que ves en pantalla: los dos campos para los números, los cuatro botones de operaciones y el espacio para el resultado.</li>
+      <li><strong><code>principal.js</code>:</strong> Este es el cerebro. Cuando haces clic en un botón de operación, el script toma los valores de los dos campos, realiza el cálculo correspondiente y actualiza la sección de "Resultado". También se encarga de guardar cada resultado para la función de historial.</li>
+    </ul>
+
+    <a href="index.html" class="button">Volver a la Calculadora</a>
+  </div>
+</body>
+</html>

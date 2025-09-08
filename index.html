@@ -1,14 +1,55 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
-  <link href='/style.css' rel='stylesheet'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora</title>
+  <link href="st.css" rel="stylesheet">
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <button onclick="console.log('hello');">Press me</button>
-  <script defer type="text/javascript" src="/main.js"></script>
+
+  <header>
+    <nav class="menu">
+      <ul>
+        <li><a href="ayuda.html">Ayuda</a></li>
+        <li><a href="comentarios.html">Juego de numeros</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="calculator-layout">
+    <h1>Calculadora</h1>
+    
+    <div class="inputs">
+      <label for="num1">Número 1</label>
+      <input type="number" id="num1" placeholder="0">
+      
+      <label for="num2">Número 2</label>
+      <input type="number" id="num2" placeholder="0">
+    </div>
+
+    <div class="buttons">
+      <button id="sum">+</button>
+      <button id="rest">-</button>
+      <button id="mult">*</button>
+      <button id="div">/</button>
+    </div>
+
+    <div class="result-container">
+      <p>Resultado:</p>
+      <p id="result">0</p>
+    </div>
+  </main>
+
+  <!-- Contenedor del Historial -->
+  <section id="history-section">
+      <button id="show-history">Mostrar Historial</button>
+      <div id="history-container" class="hidden">
+          <h2>Historial de Resultados</h2>
+          <ul id="history-list"></ul>
+      </div>
+  </section>
+
+  <script defer src="principal.js"></script>
 </body>
 </html>
